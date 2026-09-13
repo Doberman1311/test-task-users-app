@@ -5,8 +5,9 @@ import UserDetailsPage from "./pages/UserDetailsPage";
 
 function App() {
   return (
-      <BrowserRouter>
+      <BrowserRouter  basename="/test-task-users-app">
         <Routes>
+            <Route path="/" element={<UsersPage />} />
             <Route path="/users" element ={<UsersPage />} />
             <Route  path="/users/:id" element = {<UserDetailsPage />} />
         </Routes>
